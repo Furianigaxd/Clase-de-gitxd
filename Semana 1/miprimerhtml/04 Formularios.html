@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Mi primer formulario
+    </h1>
+    <form action="registro.com" method="POST"> 
+        <h2>
+            titulo de mi formulario
+        </h2>
+            <fieldset>
+                <legend>
+                Titutlo de mi formulario
+                </legend>
+
+              <input
+              required 
+              name="ID" 
+              placeholder="Ingrese su ID" 
+              type="email"/>
+            <br>
+            <br>
+
+              <input 
+              required
+              name="Paswoord" 
+              placeholder="Tu contrasena" 
+              type="password">
+
+              <button type="submit"> Iniciar Session</button>
+            </fieldset> 
+    </form>
+    <h2> Formulario de registro </h2>
+         
+    <form>
+        <fieldset>
+            <label 
+            for="nombre">Nombre</label>
+            <input 
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="ingresa tu nombre">
+            <br>
+            <br>
+            <label 
+            for="apellido">Apellido</label>
+            <input 
+            autocomplete="off"
+            id="apellido"
+            name="apellido"
+            type="text"
+            placeholder="ingresa tu apellido"
+            autofocus>
+            <br>
+            <br>
+            <label 
+            for="fechadenacimiento">Fecha de Nacimiento</label>
+            <input 
+            id="fechadenacimiento"
+            name="fechadenacimiento"
+            min="2000-01-01"
+            max="2021-10-5"
+            type="date"
+            placeholder="fechadenacimiento">
+            <br>
+            <br>
+            <label 
+            for="correo">Correo</label>
+            <input 
+            id="correo"
+            name="correo"
+            type="email"
+            placeholder="ingresa tu coreo">
+            <br>
+            <br>
+            <label 
+            for="contrasena">Contrasena</label>
+            <input 
+            id="contrasena"
+            name="contrasena"
+            type="password"
+            placeholder="ingresa tu contrasena">
+            <br>
+            <br>
+            <label 
+            for="numero">Numero</label>
+            <input 
+            id="numero"
+            name="numero"
+            type="number"
+            maxlength="9"
+            placeholder="numero">
+            <label 
+            for="pais">Numero</label>
+            <select> 
+            id="pais"
+            name="pais"
+            <option value="Peru" > Peru </option>
+            <option value="Argentina" > Argentina </option>
+            <option value="Chile" > Chile </option>
+            <option value="Venezuela" > Venezuela </option>
+            <option value="Colombia" > Colombia </option>
+            <option value="Ecuador" > Ecuador </option>
+            </select> 
+            <br>
+            <br>
+            <label for="terminos">
+                <input 
+                type="checkbox" 
+                required
+                name="terminos" id="terminos">
+                
+                Acepta los terminos y condiciones?
+            </label>
+            <label>
+                <br>
+                <br>
+                <label form="suscripcion_1" >
+                    <input id="suscripcion_1" name="suscripcion" type="radio" >
+                    Suscripcion 1
+                </label>
+                <label form="suscripcion_2" >
+                    <input id="suscripcion_2" name="suscripcion" type="radio" >
+                    Suscripcion 2
+                </label>
+                <label form="suscripcion_3" >
+                    <input id="suscripcion_3" name="suscripcion" type="radio" >
+                    Suscripcion 3
+                </label>
+            </label>
+            <br>
+            <br>
+            <label for="texto" ></label>
+            <textarea
+            id="texto"
+            name="texto"
+            placeholder="ingrese tecto"
+            rows="10"
+            cols="50"
+            maxlength="140"
+            minlength="30"
+            >
+            </textarea>
+            <button type="submit"> Registrar </button>
+            
+
+            
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
